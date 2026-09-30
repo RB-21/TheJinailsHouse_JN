@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The JiNails House — Nail Atelier & VIP Member Lounge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: '#FAF5EB',
+              rose: '#D96B68',
+              rosedark: '#B85250',
+              wine: '#5E2630',
+              brown: '#8C5449',
+              gold: '#C59A45',
+              dark: '#261612'
+            }
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-brand-cream text-brand-dark font-sans antialiased selection:bg-brand-rose selection:text-white">
+
+  <!-- TOP PROMO BANNER -->
+  <div class="bg-brand-wine text-white text-[11px] py-2 px-4 text-center tracking-wide font-medium">
+    ✨ <span class="text-brand-gold font-bold">VIP Privilege:</span> Nikmati Free 1x Nail Repair 5 Hari & Diskon hingga 50% untuk Member!
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-[#FAF5EB]/90 backdrop-blur-md border-b border-[#EAD8D0]">
+    <div class="max-w-6xl mx-auto px-4 py-3.5 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <span class="text-brand-rose text-lg">✦</span>
+        <span class="font-serif font-bold text-lg text-brand-wine tracking-wide">The JiNails House</span>
+      </a>
+      <div class="flex items-center gap-2 sm:gap-4 text-xs font-semibold">
+        <a href="#layanan" class="text-brand-brown hover:text-brand-wine hidden lg:inline-block">Layanan</a>
+        <a href="#alur" class="text-brand-brown hover:text-brand-wine hidden md:inline-block">Cara Kerja</a>
+        <a href="#komparasi" class="text-brand-brown hover:text-brand-wine hidden sm:inline-block">Keuntungan</a>
+        <a href="#faq" class="text-brand-brown hover:text-brand-wine hidden sm:inline-block">FAQ</a>
+        <a href="#daftar" class="text-brand-wine border border-brand-wine/30 hover:bg-brand-wine hover:text-white px-3.5 py-2 rounded-full transition">
+          Daftar Member
+        </a>
+        <a href="#portalCek" class="bg-brand-rose hover:bg-brand-rosedark text-white px-4 py-2 rounded-full transition shadow-sm">
+          Cek Kartu VIP
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="max-w-4xl mx-auto px-4 pt-12 pb-10 text-center">
+    <span class="text-[11px] font-bold text-brand-rose tracking-[0.25em] uppercase bg-[#FDE8EC] px-4 py-1.5 rounded-full border border-brand-rose/20">
+      ✦ Nail Atelier & Lounge ✦
+    </span>
+    <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl font-bold text-brand-wine mt-4 leading-tight">
+      Soft Life, Pretty Nails <br>& Good Energy.
+    </h1>
+    <p class="text-sm md:text-base text-brand-brown mt-4 max-w-xl mx-auto leading-relaxed">
+      Studio perawatan seni kuku eksklusif. Nikmati kenyamanan perawatan kuku, dapatkan kartu fisik 10 stempel di studio, dan pantau riwayat hadiah perawatan Anda secara digital.
+    </p>
+    <div class="mt-8 flex flex-wrap justify-center gap-3">
+      <a href="#portalCek" class="bg-brand-rose hover:bg-brand-rosedark text-white text-xs font-bold px-6 py-3.5 rounded-xl shadow-md transition">
+        Periksa Status Kartu Saya
+      </a>
+      <a href="#daftar" class="bg-brand-wine hover:bg-brand-dark text-white text-xs font-bold px-6 py-3.5 rounded-xl shadow-md transition">
+        Daftar VIP Member (Gratis)
+      </a>
+      <a href="#komparasi" class="bg-white border border-[#E0CFBF] text-brand-wine hover:bg-[#FAF5EB] text-xs font-bold px-6 py-3.5 rounded-xl transition">
+        Lihat Keuntungan Member
+      </a>
+    </div>
+  </header>
+
+  <!-- KATALOG LAYANAN STUDIO (STUDIO IDENTITY) -->
+  <section id="layanan" class="max-w-5xl mx-auto px-4 py-8">
+    <div class="text-center mb-6">
+      <span class="text-[10px] font-bold text-brand-gold tracking-widest uppercase">Treatment Signature</span>
+      <h2 class="font-serif text-2xl font-bold text-brand-wine mt-1">Layanan Unggulan Atelier</h2>
+      <p class="text-xs text-brand-brown mt-1">Setiap perawatan berhak atas 1 stempel resmi loyalty card</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+      <div class="bg-white p-4 rounded-2xl border border-[#EAD8D0] shadow-sm text-center">
+        <span class="text-2xl block mb-2">💅</span>
+        <h3 class="font-bold text-xs sm:text-sm text-brand-wine">Handcrafted Nail Art</h3>
+        <p class="text-[11px] text-stone-500 mt-1">Desain kustom artistik sesuai kepribadian Anda.</p>
+      </div>
+      <div class="bg-white p-4 rounded-2xl border border-[#EAD8D0] shadow-sm text-center">
+        <span class="text-2xl block mb-2">✨</span>
+        <h3 class="font-bold text-xs sm:text-sm text-brand-wine">BIAB & Gel Extension</h3>
+        <p class="text-[11px] text-stone-500 mt-1">Penguatan dan pemanjangan kuku alami tahan lama.</p>
+      </div>
+      <div class="bg-white p-4 rounded-2xl border border-[#EAD8D0] shadow-sm text-center">
+        <span class="text-2xl block mb-2">🌸</span>
+        <h3 class="font-bold text-xs sm:text-sm text-brand-wine">Russian Manicure</h3>
+        <p class="text-[11px] text-stone-500 mt-1">Pembersihan kutikula presisi dan steril.</p>
+      </div>
+      <div class="bg-white p-4 rounded-2xl border border-[#EAD8D0] shadow-sm text-center">
+        <span class="text-2xl block mb-2">🧴</span>
+        <h3 class="font-bold text-xs sm:text-sm text-brand-wine">Nail Care & Spa</h3>
+        <p class="text-[11px] text-stone-500 mt-1">Perawatan hidrasi kutikula dan relaksasi tangan.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALUR CARA KERJA SISTEM (3 LANGKAH) -->
+  <section id="alur" class="max-w-5xl mx-auto px-4 py-8">
+    <div class="text-center mb-6">
+      <span class="text-[10px] font-bold text-brand-rose tracking-widest uppercase">Sistem Loyalitas</span>
+      <h2 class="font-serif text-2xl font-bold text-brand-wine mt-1">Bagaimana Cara Kerja Member?</h2>
+      <p class="text-xs text-brand-brown mt-1">Integrasi kartu fisik studio dengan basis data CRM digital</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-white rounded-2xl p-5 border border-[#EAD8D0] shadow-sm text-center">
+        <div class="w-10 h-10 mx-auto bg-[#FDE8EC] text-brand-rose rounded-xl flex items-center justify-center font-bold text-base mb-3">1</div>
+        <h3 class="font-bold text-sm text-brand-wine">Isi Registrasi Mandiri</h3>
+        <p class="text-xs text-stone-500 mt-1.5 leading-relaxed">
+          Pelanggan cukup mengisi biodata singkat melalui formulir online tanpa biaya tahunan atau pendaftaran sepeser pun.
+        </p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 border border-[#EAD8D0] shadow-sm text-center">
+        <div class="w-10 h-10 mx-auto bg-[#FFF6E5] text-brand-gold rounded-xl flex items-center justify-center font-bold text-base mb-3">2</div>
+        <h3 class="font-bold text-sm text-brand-wine">Terima Kartu Fisik & Stempel</h3>
+        <p class="text-xs text-stone-500 mt-1.5 leading-relaxed">
+          Dapatkan kartu cetak manual eksklusif di kasir. Setiap 1 kali perawatan bernilai 1 stempel basah dari nailist kami.
+        </p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 border border-[#EAD8D0] shadow-sm text-center">
+        <div class="w-10 h-10 mx-auto bg-[#E8F3EB] text-[#4A7A57] rounded-xl flex items-center justify-center font-bold text-base mb-3">3</div>
+        <h3 class="font-bold text-sm text-brand-wine">Scan QR & Klaim Hadiah</h3>
+        <p class="text-xs text-stone-500 mt-1.5 leading-relaxed">
+          Pindai QR Code di kartu untuk cek status: klaim Free Cuticle Oil pada cap ke-5 dan Diskon 50% di cap ke-10.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KOMPARASI: MEMBER VS NON-MEMBER -->
+  <section id="komparasi" class="max-w-4xl mx-auto px-4 py-8">
+    <div class="text-center mb-6">
+      <span class="text-[10px] font-bold text-brand-gold tracking-widest uppercase">Eksklusivitas Layanan</span>
+      <h2 class="font-serif text-2xl sm:text-3xl font-bold text-brand-wine mt-1">Mengapa Wajib Menjadi Member?</h2>
+      <p class="text-xs text-brand-brown mt-1">Perbedaan hak perlakuan layanan pelanggan studio The JiNails House</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      <!-- Non-Member Card -->
+      <div class="bg-white rounded-2xl p-6 border border-stone-200 shadow-sm relative opacity-90">
+        <div class="pb-4 border-b border-stone-100">
+          <span class="text-[10px] bg-stone-100 text-stone-500 font-bold px-3 py-1 rounded-full uppercase">Pelanggan Reguler</span>
+          <h3 class="text-lg font-bold text-stone-700 mt-2">Non-Member</h3>
+          <p class="text-xs text-stone-400 mt-0.5">Layanan standar salon kecantikan kuku</p>
+        </div>
+        <ul class="mt-4 space-y-3 text-xs text-stone-600">
+          <li class="flex items-start gap-2">
+            <span class="text-stone-400 font-bold">✕</span>
+            <span>Membayar tarif normal penuh sesuai buku menu.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-stone-400 font-bold">✕</span>
+            <span>Tidak berhak atas kartu fisik dan akumulasi stempel loyalty.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-stone-400 font-bold">✕</span>
+            <span>Garansi perbaikan kuku patah/rusak dikenakan biaya per jari.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-stone-400 font-bold">✕</span>
+            <span>Mengikuti slot antrean umum (rentan penuh saat weekend).</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-stone-400 font-bold">✕</span>
+            <span>Tidak ada reward ulang tahun maupun diskon milestone.</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Member Card -->
+      <div class="bg-gradient-to-b from-white to-[#FDF8F5] rounded-2xl p-6 border-2 border-brand-rose shadow-md relative">
+        <div class="absolute -top-3 right-5 bg-brand-rose text-white text-[10px] font-bold px-3 py-0.5 rounded-full uppercase tracking-wider">
+          Direkomendasikan
+        </div>
+        <div class="pb-4 border-b border-brand-rose/20">
+          <span class="text-[10px] bg-[#FDE8EC] text-brand-rose font-bold px-3 py-1 rounded-full uppercase">VIP Member Pass</span>
+          <h3 class="text-lg font-bold text-brand-wine mt-2">Member The JiNails House</h3>
+          <p class="text-xs text-brand-brown mt-0.5">Pendaftaran Gratis saat kunjungan pertama</p>
+        </div>
+        <ul class="mt-4 space-y-3 text-xs text-brand-dark">
+          <li class="flex items-start gap-2">
+            <span class="text-brand-rose font-bold">✓</span>
+            <span><strong>Kartu Cetak Fisik Manual:</strong> Eksklusif 10 slot stempel kunjungan.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-rose font-bold">✓</span>
+            <span><strong>Milestone Reward:</strong> Cap ke-5 Free Cuticle Oil, Cap ke-10 Diskon 50%.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-rose font-bold">✓</span>
+            <span><strong>Free 1x Nail Repair:</strong> Garansi perbaikan gratis 5 hari jika kuku rusak.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-rose font-bold">✓</span>
+            <span><strong>Prioritas Slot Reservasi:</strong> Konfirmasi jadwal lebih cepat saat jam ramai.</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <span class="text-brand-rose font-bold">✓</span>
+            <span><strong>Birthday Privilege:</strong> Bonus aksesoris kuku atau voucher khusus di bulan lahir.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM PENDAFTARAN MEMBER MANDIRI (GOOGLE FORM INTEGRATION) -->
+  <section id="daftar" class="max-w-3xl mx-auto px-4 py-8">
+    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-[#EAD8D0]">
+      <div class="text-center mb-6">
+        <span class="text-[10px] tracking-[0.2em] font-bold text-brand-wine uppercase bg-[#FAF5EB] px-3 py-1 rounded-full border border-[#EAD8D0]">
+          Registrasi Anggota Baru
+        </span>
+        <h2 class="font-serif text-2xl font-bold text-brand-wine mt-2">Daftar VIP Member The JiNails House</h2>
+        <p class="text-xs text-brand-brown mt-1">
+          Isi data diri Anda di bawah ini secara mandiri. Kartu fisik 10 stempel akan diserahkan langsung oleh kasir studio!
+        </p>
+      </div>
+
+      <div class="border border-[#EAD8D0] rounded-2xl overflow-hidden bg-[#FAF5EB]/40 p-4 text-center space-y-4">
+        <p class="text-xs text-stone-600 leading-relaxed max-w-md mx-auto">
+          Silakan mengisi formulir resmi keanggotaan. Data tersinkronisasi langsung ke spreadsheet studio kami untuk penerbitan ID Member otomatis.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQ4gq5uD2H-mK2k1bDs_example/viewform" target="_blank" id="btnBukaForm"
+            class="bg-brand-wine hover:bg-brand-dark text-white text-xs font-bold px-6 py-3 rounded-xl shadow-md transition inline-flex items-center gap-2">
+            <span>📝</span> Buka Formulir Pendaftaran (Google Form)
+          </a>
+          <button onclick="toggleEmbedForm()" id="btnToggleEmbed"
+            class="bg-white border border-[#E0CFBF] text-brand-wine hover:bg-[#FAF5EB] text-xs font-semibold px-4 py-3 rounded-xl transition">
+            Tampilkan Form di Sini
+          </button>
+        </div>
+
+        <div id="embedContainer" class="hidden pt-4 border-t border-[#EAD8D0]">
+          <iframe id="googleFormIframe"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSeQ4gq5uD2H-mK2k1bDs_example/viewform?embedded=true"
+            width="100%" height="700" frameborder="0" marginheight="0" marginwidth="0"
+            class="rounded-xl border border-stone-200 bg-white">
+            Memuat formulir pendaftaran...
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTAL CEK KARTU MEMBER (TERKONEKSI REAL-TIME GOOGLE SHEETS) -->
+  <section id="portalCek" class="max-w-xl mx-auto px-4 py-8">
+    <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-[#EAD8D0]">
+      <div class="text-center mb-6">
+        <span class="text-[10px] tracking-[0.2em] font-bold text-brand-rose uppercase">Portal Keanggotaan</span>
+        <h2 class="font-serif text-2xl font-bold text-brand-wine mt-1">Periksa Kartu & Progres Cap</h2>
+        <p class="text-xs text-brand-brown mt-1">Masukkan ID Member (misal: JNH-016), No. HP, atau Email Anda</p>
+      </div>
+
+      <!-- Search Box -->
+      <div class="flex gap-2">
+        <input type="text" id="queryInput" placeholder="Contoh: JNH-016 atau 0821xxxx"
+          class="w-full text-xs px-4 py-3 bg-[#FAF5EB]/60 border border-[#E0CFBF] rounded-xl focus:outline-none focus:border-brand-rose text-brand-wine font-medium">
+        <button onclick="searchMember()"
+          class="bg-brand-rose hover:bg-brand-rosedark text-white px-6 py-3 rounded-xl text-xs font-bold transition shadow-sm whitespace-nowrap">
+          Cari Data
+        </button>
+      </div>
+
+      <!-- Loading Indicator -->
+      <div id="loadingIndicator" class="hidden text-center py-6">
+        <div class="inline-block animate-spin w-6 h-6 border-2 border-brand-rose border-t-transparent rounded-full mb-2"></div>
+        <p class="text-xs text-brand-brown font-medium">Menghubungkan ke database studio...</p>
+      </div>
+
+      <!-- Detail Kartu Member yang Ditemukan -->
+      <div id="portalContent" class="hidden mt-6 pt-6 border-t border-[#EAD8D0] space-y-4">
+        <div class="bg-[#FAF5EB]/60 border border-[#EAD8D0] rounded-2xl p-4 flex justify-between items-start">
+          <div>
+            <span class="inline-block text-[9px] bg-[#799A82] text-white px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider mb-1">
+              VIP Member Active
+            </span>
+            <h3 id="viewNama" class="text-lg font-bold text-brand-wine leading-tight">-</h3>
+            <p id="viewTanggal" class="text-[10px] text-stone-400 mt-0.5">Terdaftar: -</p>
+          </div>
+          <div class="text-right">
+            <span class="text-[9px] text-stone-400 uppercase tracking-wider block font-semibold">ID MEMBER</span>
+            <span id="viewId" class="font-mono text-xs font-bold text-brand-rose bg-[#FDE8EC] px-2.5 py-1 rounded-md inline-block mt-0.5">-</span>
+          </div>
+        </div>
+
+        <!-- 8 Field Biodata Lengkap -->
+        <div class="space-y-2 text-xs">
+          <div class="bg-white border border-[#EAD8D0] rounded-xl p-2.5">
+            <span class="text-[9px] text-stone-400 font-bold uppercase tracking-wide block">Alamat Lengkap</span>
+            <span id="viewAlamat" class="font-semibold text-brand-wine block mt-0.5">-</span>
+          </div>
+          <div class="grid grid-cols-2 gap-2">
+            <div class="bg-white border border-[#EAD8D0] rounded-xl p-2.5">
+              <span class="text-[9px] text-stone-400 font-bold uppercase tracking-wide block">No. HP / WhatsApp</span>
+              <span id="viewHp" class="font-semibold text-brand-wine block mt-0.5">-</span>
+            </div>
+            <div class="bg-white border border-[#EAD8D0] rounded-xl p-2.5">
+              <span class="text-[9px] text-stone-400 font-bold uppercase tracking-wide block">Instagram</span>
+              <span id="viewInstagram" class="font-semibold text-brand-wine block mt-0.5">-</span>
+            </div>
+          </div>
+          <div class="bg-white border border-[#EAD8D0] rounded-xl p-2.5">
+            <span class="text-[9px] text-stone-400 font-bold uppercase tracking-wide block">Email</span>
+            <span id="viewEmail" class="font-semibold text-brand-wine truncate block mt-0.5">-</span>
+          </div>
+        </div>
+
+        <!-- 10 Stamp Visualizer -->
+        <div class="pt-4 border-t border-dashed border-[#EAD8D0]">
+          <div class="flex justify-between items-center mb-3">
+            <div>
+              <span class="text-xs font-bold text-brand-wine uppercase tracking-wide block">Sinkronisasi Cap Studio</span>
+              <span class="text-[10px] text-stone-400">Tercatat di Kartu Fisik & Web</span>
+            </div>
+            <span id="viewCountText" class="text-xs font-bold text-brand-rose bg-[#FAF5EB] px-2.5 py-1 rounded-lg border border-[#EAD8D0]">
+              0 / 10 Cap
+            </span>
+          </div>
+          <div id="stampsGrid" class="grid grid-cols-5 gap-2"></div>
+          <div id="rewardBanner" class="mt-3 bg-[#FAF5EB] border border-[#F0D5A6] rounded-xl p-3 text-center text-xs text-[#6E453E] font-medium leading-relaxed"></div>
+        </div>
+
+        <!-- Barcode / QR Code Gambar -->
+        <div class="pt-4 border-t border-dashed border-[#EAD8D0] text-center">
+          <span class="text-[10px] text-stone-400 font-bold uppercase tracking-wider block mb-2">QR Code Kartu Member</span>
+          <div class="inline-block p-2.5 bg-white border border-[#EAD8D0] rounded-2xl shadow-sm">
+            <img id="viewBarcode" src="" alt="Barcode Member" class="w-36 h-36 mx-auto object-contain">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION (EDUKASI KELAS & DOSEN) -->
+  <section id="faq" class="max-w-3xl mx-auto px-4 py-8">
+    <div class="text-center mb-6">
+      <span class="text-[10px] font-bold text-brand-brown tracking-widest uppercase">Pertanyaan Umum</span>
+      <h2 class="font-serif text-2xl font-bold text-brand-wine mt-1">Frequently Asked Questions</h2>
+    </div>
+    <div class="space-y-3 text-xs">
+      <div class="bg-white p-4 rounded-xl border border-[#EAD8D0]">
+        <h4 class="font-bold text-brand-wine">Apakah kartu fisik manual dan web ini saling terhubung?</h4>
+        <p class="text-stone-500 mt-1">Ya. Setiap kali nailist menstempel kartu fisik Anda di kasir, data cap di Google Sheets diperbarui sehingga otomatis tersinkronisasi di portal web ini.</p>
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-[#EAD8D0]">
+        <h4 class="font-bold text-brand-wine">Bagaimana cara mengklaim hadiah Free Cuticle Oil dan Diskon 50%?</h4>
+        <p class="text-stone-500 mt-1">Cukup tunjukkan fisik kartu stempel Anda atau buka halaman profil member ini di kasir saat menyelesaikan pembayaran.</p>
+      </div>
+      <div class="bg-white p-4 rounded-xl border border-[#EAD8D0]">
+        <h4 class="font-bold text-brand-wine">Apakah pendaftaran member dipungut biaya?</h4>
+        <p class="text-stone-500 mt-1">Tidak ada biaya pendaftaran. Keanggotaan VIP Pass 100% gratis bagi setiap pelanggan studio The JiNails House.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-[#EAD8D0] bg-white py-8 text-center text-xs text-stone-500 mt-6">
+    <div class="max-w-xl mx-auto px-4 space-y-2">
+      <p class="font-serif font-bold text-base text-brand-wine">The JiNails House</p>
+      <p class="italic text-[11px] text-brand-brown">“Soft life, pretty nails & good energy.”</p>
+      <p class="pt-2 text-[11px]">
+        Instagram: <a href="https://instagram.com/thejinailshouse" target="_blank" class="text-brand-rose font-semibold underline">@thejinailshouse</a>
+      </p>
+      <p class="text-[10px] text-stone-400">© 2026 The JiNails House • Studi Kasus Praktikum CRM Terintegrasi</p>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC (MAPPING SPREADSHEET GVIZ DENGAN TOTAL CAP KOLOM J) -->
+  <script>
+    const SPREADSHEET_ID = "1Xe_lvitL8N7qhwQ1e0c7DQ4ErHnzWzGeImfHkyab7lc";
+    const SHEET_GID = "2034393288";
+
+    // URL Google Form resmi pendaftaran
+    const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSeQ4gq5uD2H-mK2k1bDs_example/viewform";
+
+    function toggleEmbedForm() {
+      const container = document.getElementById("embedContainer");
+      const btn = document.getElementById("btnToggleEmbed");
+      if (container.classList.contains("hidden")) {
+        container.classList.remove("hidden");
+        btn.textContent = "Sembunyikan Form";
+      } else {
+        container.classList.add("hidden");
+        btn.textContent = "Tampilkan Form di Sini";
+      }
+    }
+
+    // Auto-search jika ada query param ?id=JNH-016
+    window.addEventListener("DOMContentLoaded", () => {
+      const btnForm = document.getElementById("btnBukaForm");
+      const iframeForm = document.getElementById("googleFormIframe");
+      if (btnForm) btnForm.href = GOOGLE_FORM_URL;
+      if (iframeForm) iframeForm.src = GOOGLE_FORM_URL + (GOOGLE_FORM_URL.includes("?") ? "&embedded=true" : "?embedded=true");
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const queryId = urlParams.get("id") || urlParams.get("wa") || urlParams.get("email");
+      if (queryId) {
+        document.getElementById("queryInput").value = queryId;
+        searchMember();
+      }
+    });
+
+    async function searchMember() {
+      const query = document.getElementById("queryInput").value.trim().toLowerCase();
+      if (!query) return;
+
+      const loading = document.getElementById("loadingIndicator");
+      const content = document.getElementById("portalContent");
+      loading.classList.remove("hidden");
+      content.classList.add("hidden");
+
+      try {
+        const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:json&gid=${SHEET_GID}`;
+        const res = await fetch(url);
+        const text = await res.text();
+        const jsonString = text.substring(text.indexOf("{"), text.lastIndexOf("}") + 1);
+        const data = JSON.parse(jsonString);
+        const rows = data.table.rows;
+
+        // Pemetaan kolom terverifikasi:
+        // Col B (1): Nama | Col C (2): Alamat | Col D (3): No HP | Col E (4): Instagram
+        // Col F (5): Tanggal | Col G (6): Email | Col H (7): ID MEMBER | Col I (8): BARCODE
+        // Col J (9): TOTAL CAP (Tepat di samping Kolom I)
+        let colMap = {
+          nama: 1,
+          alamat: 2,
+          hp: 3,
+          ig: 4,
+          tanggal: 5,
+          email: 6,
+          idMember: 7,
+          barcode: 8,
+          totalCap: 9 // Kolom J (Indeks 9)
+        };
+
+        if (data.table.cols && data.table.cols.length > 0) {
+          data.table.cols.forEach((col, idx) => {
+            if (!col || !col.label) return;
+            const lbl = col.label.trim().toLowerCase();
+            if (lbl.includes("id") && lbl.includes("member")) colMap.idMember = idx;
+            else if (lbl.includes("nama")) colMap.nama = idx;
+            else if (lbl.includes("alamat")) colMap.alamat = idx;
+            else if (lbl.includes("instagram") || lbl.includes("ig")) colMap.ig = idx;
+            else if (lbl.includes("email")) colMap.email = idx;
+            else if (lbl.includes("tanggal")) colMap.tanggal = idx;
+            else if (lbl.includes("hp") || lbl.includes("wa") || lbl.includes("telepon")) colMap.hp = idx;
+            else if (lbl.includes("barcode") || lbl.includes("qr")) colMap.barcode = idx;
+            else if (lbl.includes("total cap") || lbl.includes("cap")) colMap.totalCap = idx;
+          });
+        }
+
+        let found = null;
+        const numOnlyQuery = query.replace(/[^0-9]/g, "");
+
+        for (let r of rows) {
+          if (!r.c) continue;
+
+          const getVal = (idx) => {
+            if (!r.c[idx]) return "";
+            return (r.c[idx].f || String(r.c[idx].v || "")).trim();
+          };
+
+          const nama = getVal(colMap.nama);
+          const alamat = getVal(colMap.alamat);
+          const hpRaw = getVal(colMap.hp);
+          const hpNum = hpRaw.replace(/[^0-9]/g, "");
+          const ig = getVal(colMap.ig);
+          const tanggal = getVal(colMap.tanggal);
+          const email = getVal(colMap.email);
+          const idMember = getVal(colMap.idMember);
+          const barcodeRaw = getVal(colMap.barcode);
+
+          // Ambil angka dari Kolom J (TOTAL CAP)
+          let totalCap = 0;
+          if (r.c[colMap.totalCap] && r.c[colMap.totalCap].v !== null) {
+            totalCap = Number(r.c[colMap.totalCap].v) || 0;
+          }
+
+          const matchId = idMember && idMember.toLowerCase() === query;
+          const matchEmail = email && email.toLowerCase() === query;
+          const matchHp = numOnlyQuery.length >= 8 && hpNum.endsWith(numOnlyQuery.slice(-8));
+
+          if (matchId || matchEmail || matchHp) {
+            found = {
+              nama: nama || "-",
+              alamat: alamat || "-",
+              hp: hpRaw || "-",
+              ig: ig || "-",
+              tanggal: tanggal || "-",
+              email: email || "-",
+              idMember: idMember || "-",
+              barcode: barcodeRaw,
+              totalCap: totalCap
+            };
+            break;
+          }
+        }
+
+        loading.classList.add("hidden");
+
+        if (found) {
+          renderCard(found);
+          content.classList.remove("hidden");
+        } else {
+          alert("Member tidak ditemukan. Pastikan ID Member, No. HP, atau Email sudah terdaftar di Google Form.");
+        }
+      } catch (err) {
+        loading.classList.add("hidden");
+        alert("Gagal membaca database spreadsheet. Pastikan izin berbagi Google Sheets adalah 'Anyone with the link' (Viewer).");
+      }
+    }
+
+    function renderCard(m) {
+      document.getElementById("viewNama").textContent = m.nama;
+      document.getElementById("viewId").textContent = m.idMember;
+      document.getElementById("viewAlamat").textContent = m.alamat;
+      document.getElementById("viewHp").textContent = m.hp;
+      document.getElementById("viewInstagram").textContent = m.ig.startsWith("@") ? m.ig : (m.ig !== "-" ? "@" + m.ig : "-");
+      document.getElementById("viewEmail").textContent = m.email;
+      document.getElementById("viewTanggal").textContent = "Terdaftar: " + m.tanggal;
+      document.getElementById("viewCountText").textContent = `${m.totalCap} / 10 Cap`;
+
+      // Render 10 Cap Grid
+      const grid = document.getElementById("stampsGrid");
+      grid.innerHTML = "";
+      for (let i = 1; i <= 10; i++) {
+        const isFilled = i <= m.totalCap;
+        const box = document.createElement("div");
+        let base = "h-11 flex flex-col items-center justify-center rounded-xl text-xs font-bold transition-all ";
+
+        if (isFilled) {
+          box.className = base + "bg-brand-rose text-white shadow-sm border border-brand-rose";
+          if (i === 5) box.innerHTML = "<span class='text-[10px]'>★ 5</span>";
+          else if (i === 10) box.innerHTML = "<span>👑</span>";
+          else box.innerHTML = "<span>✿</span>";
+        } else {
+          if (i === 5) {
+            box.className = base + "bg-[#FFF6E5] text-brand-gold border-2 border-dashed border-brand-gold/60";
+            box.innerHTML = "<span class='text-[8px] leading-tight text-center'>5<br><span class='text-[6px]'>OIL</span></span>";
+          } else if (i === 10) {
+            box.className = base + "bg-[#FDE8EC] text-brand-rose border-2 border-dashed border-brand-rose/60";
+            box.innerHTML = "<span class='text-[8px] leading-tight text-center'>10<br><span class='text-[6px]'>50%</span></span>";
+          } else {
+            box.className = base + "bg-stone-50 text-stone-400 border border-dashed border-stone-300";
+            box.innerText = i;
+          }
+        }
+        grid.appendChild(box);
+      }
+
+      // Banner Milestone Hadiah
+      const rem = 10 - m.totalCap;
+      const banner = document.getElementById("rewardBanner");
+      if (m.totalCap >= 10) {
+        banner.innerHTML = "👑 <strong>Selamat! 10 Cap Lengkap.</strong><br>Tunjukkan kartu ke kasir/nailist untuk klaim <strong>Diskon 50%</strong> hari ini!";
+      } else if (m.totalCap >= 5) {
+        banner.innerHTML = `✨ Cap ke-5 tercapai (Free Cuticle Oil).<br>Kumpulkan <strong>${rem} cap lagi</strong> untuk klaim <strong>Diskon 50%</strong>!`;
+      } else {
+        banner.innerHTML = `✨ Kumpulkan <strong>${5 - m.totalCap} cap lagi</strong> untuk klaim <strong>Free Cuticle Oil</strong> di Cap ke-5!`;
+      }
+
+      // Barcode / QR Code Personal
+      const barcodeImg = document.getElementById("viewBarcode");
+      if (m.barcode && m.barcode.startsWith("http")) {
+        barcodeImg.src = m.barcode;
+      } else {
+        barcodeImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=${encodeURIComponent("https://jihannabillah.github.io/THEJINAILSHOUSE_JN/#portalCek?id=" + m.idMember)}`;
+      }
+    }
+  </script>
+</body>
+
+</html>
